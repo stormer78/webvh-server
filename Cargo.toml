@@ -1,6 +1,17 @@
 [package]
 name = "webvh-server"
 version = "0.1.0"
+description = "Simple web server that serves files"
+repository = "https://github.com/stormer78/webvh-server"
 edition = "2024"
+authors = ["Glenn Gore <glenn@affinidi.com>"]
+homepage = "https://affinidi.com/"
+keywords = ["ssi"]
+publish = false
+license = "Apache-2.0"
+readme = "README.md"
+rust-version = "1.88.0"
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
+warp = { version = "0.4", features = ["server"] }
